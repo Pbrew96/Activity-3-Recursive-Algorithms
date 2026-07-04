@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FactorialRecursion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acd5587c7dd06c4a4dbd0294f3b0eb953d61de0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4361712990a9af69778c14dd5773b4f9933c836")]
 [assembly: System.Reflection.AssemblyProductAttribute("FactorialRecursion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FactorialRecursion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
