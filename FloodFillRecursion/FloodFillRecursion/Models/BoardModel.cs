@@ -45,33 +45,26 @@ namespace FloodFillRecursion.Models
         /// <summary>
         ///  Create shapes to place on the board
         /// </summary>
-        public void PlaceShapes()
+        /// <summary>
+        /// Place random wall points on the board
+        /// </summary>
+        private void PlaceShapes()
         {
             // Declare and initialize
-            // Random object to generate numbers
             Random random = new Random();
-            int shapeSize = Size / 2, row = 0, col = 0;
+            int row = 0, col = 0;
 
-            // Create three shapes
-            for (int shapes = 0; shapes < NumShapes; shapes++)
+            // Create random wall points
+            for (int point = 0; point < NumShapes; point++)
             {
-                //Generate the row and col for the 
-                // top left corner of the square
-                row = random.Next(0, Size - shapeSize + 1);
-                col = random.Next(0, Size - shapeSize + 1);
-                for (int offset = 0; offset < shapeSize; offset++)
-                {
-                    //Top wall
-                    Grid[row, col + offset].Contents = "W";
-                    //Bottom Wall
-                    Grid[row + shapeSize - 1, col + offset].Contents = "W";
-                    // Left wall
-                    Grid[row + offset, col].Contents = "W";
-                    // Right wall
-                    Grid[row + offset, col + shapeSize - 1].Contents = "W";
-                }
-            }
+                // Generate a random row and column
+                row = random.Next(0, Size);
+                col = random.Next(0, Size);
 
-        } // End of PlaceShapes method
+                // Place a wall at the random location
+                Grid[row, col].Contents = "W";
+            }
+        }
+
+    } // End of PlaceShapes method
     }
-}
